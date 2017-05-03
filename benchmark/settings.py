@@ -89,6 +89,8 @@ DATABASES = {
 }
 
 connect('benchmark', username='user_benchmark', password='BCyNTCj4WerNvqGipEGCjoVA')
+
+# control de sesiones
 SESSION_ENGINE = 'mongoengine.django.sessions'
 SESSION_SERIALIZER = 'mongoengine.django.sessions.BSONSerializer'
 
