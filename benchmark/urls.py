@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from hotels import views as views_hotels
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
+    url(r'^$', views_hotels.home)
 ]
